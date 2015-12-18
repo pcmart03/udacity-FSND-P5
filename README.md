@@ -44,7 +44,7 @@ Just as a preface, I really meant to take better notes as I went along, but then
 The table below contains the ports opened in the application firewall
 
 | To | Action  | From |
-| -- | ------  | ---- |
+| --- | ------  | ---- |
 | 2200/tcp | ALLOW | Anywhere |
 | 80/tcp   | ALLOW  | Anywhere |
 | 123/udp | ALLOW   | Anywhere |
