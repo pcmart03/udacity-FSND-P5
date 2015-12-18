@@ -43,14 +43,14 @@ Just as a preface, I really meant to take better notes as I went along, but then
 
 The table below contains the ports opened in the application firewall
 
-To | Action  | From
--- | ------  | ----
-2200/tcp | ALLOW | Anywhere
-80/tcp   | ALLOW  | Anywhere
-123/udp | ALLOW   | Anywhere
-2200/tcp (v6)  |  ALLOW  | Anywhere (v6)
-80/tcp (v6)  | ALLOW | Anywhere (v6)
-123/udp (v6) | ALLOW | Anywhere (v6)
+| To | Action  | From |
+| -- | ------  | ---- |
+| 2200/tcp | ALLOW | Anywhere |
+| 80/tcp   | ALLOW  | Anywhere |
+| 123/udp | ALLOW   | Anywhere |
+| 2200/tcp (v6)  |  ALLOW  | Anywhere (v6) |
+| 80/tcp (v6)  | ALLOW | Anywhere (v6) |
+| 123/udp (v6) | ALLOW | Anywhere (v6) |
 
 ####Catalog App
 I had to turn the app into a python package to make it play nicely with WSGI. `catalog.py` became `__init__.py`. I also changed the database from sqlite to postgresql. The only changes I had to make to my `database_setup.py` file were to the set the engine to a postgres database, and add a UNIQUE constraint to the filename column on my `photo` table.
